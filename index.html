@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TODO</title>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+   <div class="wrapper border">
+
+      <header class="header">
+         <button id="delete-all" class="header__button button border">Delete All</button>
+         <button id="delete-last" class="header__button button border">Delete Last</button>
+         <form action="#" class="form">
+            <input type="text" placeholder="Enter todo..." class="header__input border" required>
+            <button id="add" class="header__button__add button border" type="submit">Add</button>
+         </form>
+      </header>
+
+      <div class="search">
+         <p class="search__counterAll">All: 0</p>
+         <p class="search__counterCompleted">Completed: 0</p>
+         <button id="show-all" class="search__button button border">Show All</button>
+         <button id="show-comleted" class="search__button button border">Show Completed</button>
+         <form action="#" class="form2"><input type="search" placeholder="Search..." class="search__input border"></form>
+      </div>
+
+      <div class="tasks"></div>
+
+   </div>
+
+</body>
+
+</html>
