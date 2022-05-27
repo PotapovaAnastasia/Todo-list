@@ -98,10 +98,10 @@ function handleSearchTodo (event) {
    event.preventDefault()
    cleanContainerHTML()
 
-   const value = searchInputElement.value
+   const value = searchInputElement.value.toLowerCase()
 
    todoArray.forEach((item) => {
-      if (item.content.indexOf(value) !== -1) {
+      if (item.content.toLowerCase().indexOf(value) !== -1) {
          todoContainerElement.innerHTML += createTemplateTodo(item)
       }
    })
